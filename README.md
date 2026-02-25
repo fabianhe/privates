@@ -28,13 +28,3 @@ Within your virtual environment, you can run the pre-commit checks on all files 
 ```bash
 pre-commit run --all-files
 ```
-
-## [Streamlit](https://streamlit.io/)
-> A faster way to build and share data apps
-
-
-Please run the following command in your virtual environment to start the Streamlit app:
-
-```bash
-streamlit run src/dashboard/streamlit_app.py
-```
