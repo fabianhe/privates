@@ -7,7 +7,9 @@ authors = [
     { name = "fabianhe", email = "39628987+fabianhe@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pandas>=3.0.1",
+]
 
 [dependency-groups]
 dev = [
