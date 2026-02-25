@@ -1,0 +1,23 @@
+[project]
+name = "privates"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "fabianhe", email = "39628987+fabianhe@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "pytest>=9.0.2",
+    "pytest-xdist>=3.8.0",
+    "ruff>=0.15.2",
+    "ty>=0.0.18",
+]
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"

@@ -1,0 +1,29 @@
+fail_fast: true
+default_stages: [pre-commit]
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-check-fix
+        name: ruff check --fix
+        entry: ruff check --fix
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: ruff-format
+        name: ruff format
+        entry: ruff format
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: ty
+        name: ty check
+        entry: ty check
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: pytest
+        name: pytest
+        entry: pytest -n auto
+        language: system
+        pass_filenames: false
+        always_run: true
