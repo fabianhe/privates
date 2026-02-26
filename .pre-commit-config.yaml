@@ -23,7 +23,7 @@ repos:
         always_run: true
       - id: pytest
         name: pytest
-        entry: pytest -n auto
+        entry: pytest -n auto --cov=src --cov-fail-under=80 --cov-report=term-missing:skip-covered
         language: system
         pass_filenames: false
         always_run: true
