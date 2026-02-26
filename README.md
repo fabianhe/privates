@@ -9,6 +9,11 @@ Private (fund) investment modeling tools.
 
 Please manage your Python version as well as your virtual environment with uv.
 
+You can sync your virtual environment using uv:
+```bash
+uv sync --all-groups
+```
+
 You can activate the virtual environment as follows:
 ```bash
 source .venv/bin/activate
@@ -27,4 +32,12 @@ Within your virtual environment, you can run the pre-commit checks on all files 
 
 ```bash
 pre-commit run --all-files
+```
+
+## [marimo](https://marimo.io/)
+> The future of Python notebooks is here
+
+Run from your virtual environment as follows:
+```bash
+marimo edit
 ```

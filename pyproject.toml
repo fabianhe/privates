@@ -8,19 +8,32 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "numpy>=2.4.2",
     "pandas>=3.0.1",
+    "pyxirr>=0.10.8",
 ]
 
 [dependency-groups]
 dev = [
+    "mcp>=1.26.0",
+    "openai>=2.24.0",
     "pre-commit>=4.5.1",
+    "pydantic-ai-slim[openai]>=1.63.0",
     "pytest>=9.0.2",
     "pytest-cov>=7.0.0",
     "pytest-xdist>=3.8.0",
     "ruff>=0.15.2",
     "ty>=0.0.18",
 ]
+tutorial = [
+    "marimo>=0.20.2",
+    "matplotlib>=3.10.8",
+    "seaborn>=0.13.2",
+]
 
 [build-system]
 requires = ["uv_build"]
 build-backend = "uv_build"
+
+[tool.ty.src]
+exclude = ["tutorials"]

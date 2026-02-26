@@ -11,3 +11,6 @@ wheels/
 
 # Coverage
 .coverage
+
+# Marimo
+__marimo__/
